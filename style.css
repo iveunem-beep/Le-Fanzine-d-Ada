@@ -1,0 +1,293 @@
+/* ═══════════════════════════════════════════════════════════
+   LE FANZINE D'ADA — feuille de style
+   ───────────────────────────────────────────────────────────
+   La partie « BASE » est déjà écrite. N'y touche pas.
+   Tu travailles uniquement dans la partie « TES DÉFIS », en bas.
+   ═══════════════════════════════════════════════════════════ */
+
+
+/* ═══════════════════════════════════════════════════════════
+   BASE — ne pas modifier
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  --creme:   #FAF4F0;
+  --rouge:   #C94530;
+  --vert:    #2E6B3E;
+  --violet:  #5B4FDC;
+  --noir:    #1A1A1A;
+  --gris:    #6B6B6B;
+  --bordure: #E4D5CC;
+  --blanc:   #FFFFFF;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Barlow", sans-serif;
+  background: var(--creme);
+  color: var(--noir);
+  line-height: 1.75;
+}
+
+/* La une */
+.une {
+  background: var(--noir);
+  color: var(--creme);
+  padding: 64px 32px 56px;
+  text-align: center;
+}
+.une-tag {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--rouge);
+  margin-bottom: 20px;
+}
+.une-titre {
+  font-family: "Playfair Display", serif;
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+.une-accroche {
+  font-size: 1.05rem;
+  color: rgba(250, 244, 240, .7);
+}
+
+/* Corps de page */
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 24px 96px;
+}
+
+.edito, .bloc { margin-bottom: 64px; }
+
+.titre-section {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  color: var(--violet);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+p { margin-bottom: 18px; }
+
+code {
+  font-family: "Source Code Pro", monospace;
+  font-size: .88em;
+  background: #EDE0D9;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Citation */
+.citation {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: var(--rouge);
+  border-left: 3px solid var(--rouge);
+  padding: 8px 0 8px 24px;
+  margin: 32px 0;
+}
+
+/* Listes */
+.sommaire, .etapes, .liens {
+  margin: 0 0 24px 24px;
+}
+.sommaire li, .etapes li, .liens li {
+  margin-bottom: 12px;
+  padding-left: 6px;
+}
+.etapes { list-style: none; margin-left: 0; }
+.etapes li { padding-left: 44px; position: relative; }
+
+/* Encadrés */
+.encadre {
+  background: var(--blanc);
+  border: 1px solid var(--bordure);
+  border-left: 4px solid var(--violet);
+  padding: 22px 24px 8px;
+  margin: 28px 0;
+  position: relative;
+}
+.encadre.attention { border-left-color: var(--rouge); }
+.encadre p { margin-bottom: 14px; }
+
+/* Liens */
+a { color: var(--violet); text-decoration: none; border-bottom: 1px solid currentColor; }
+a:hover { color: var(--rouge); }
+
+.note { font-size: .92rem; color: var(--gris); margin-top: 28px; }
+
+/* Formulaire */
+.formulaire { margin-top: 24px; }
+.champ { margin-bottom: 22px; }
+.champ label {
+  display: block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: 6px;
+}
+.champ input, .champ textarea {
+  width: 100%;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  padding: 10px 14px;
+  border: 1px solid var(--bordure);
+  background: var(--blanc);
+  color: var(--noir);
+}
+.champ input:focus, .champ textarea:focus {
+  outline: 2px solid var(--violet);
+  outline-offset: 1px;
+}
+.bouton {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  background: var(--rouge);
+  color: var(--blanc);
+  border: none;
+  padding: 14px 28px;
+  cursor: pointer;
+}
+.bouton:hover { background: var(--noir); }
+
+/* Pied de page */
+.pied {
+  background: var(--noir);
+  color: rgba(250, 244, 240, .6);
+  text-align: center;
+  padding: 32px 24px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+.pied p { margin: 0; }
+
+@media (max-width: 600px) {
+  .une-titre { font-size: 2.6rem; }
+  .page { padding: 40px 20px 72px; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   TES DÉFIS — écris ton code ici
+   ═══════════════════════════════════════════════════════════ */
+
+
+/* ─── DÉFI 1 — L'ouverture de l'édito ────────────────────── */
+.chapo::first-letter {
+  font-size: 4em;
+  color: var(--rouge);
+  float: left;
+  line-height: 0.8;
+  font-weight: 700;
+}
+.chapo::first-line {
+  font-variant: small-caps;
+}
+
+
+
+/* ─── DÉFI 2 — Les puces du sommaire ─────────────────────── */
+
+.sommaire li::marker {
+  content: "▸ ";
+  color: var(--violet);
+  font-size: 1.2em;
+}
+
+
+/* ─── DÉFI 3 — Les étapes numérotées ─────────────────────── */
+.etapes {
+  counter-reset: etape;
+}
+.etapes li {
+  counter-increment: etape;
+}
+.etapes li::before {
+  content: counter(etape);
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+
+  background: var(--rouge);
+  color: var(--blanc);
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}
+
+
+
+/* ─── DÉFI 4 — La signature de la citation ───────────────── */
+.citation::after {
+  content: "— " attr(data-auteure);
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: var(--gris);
+}
+
+
+
+
+/* ─── DÉFI 5 — L'étiquette des encadrés ──────────────────── */
+.encadre::before {
+  content: attr(data-label);
+  position: absolute;
+  top: -0.8em;
+  left: 1em;
+
+  background: var(--violet);
+  color: var(--blanc);
+  padding: 0.2em 0.6em;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.encadre.attention::before {
+  background: var(--rouge);
+}
+
+
+/* ─── DÉFI 6 — Les finitions du formulaire ───────────────── */
+input::placeholder,
+textarea::placeholder {
+  color: var(--gris);
+  font-style: italic;
+}
+label.requis::after {
+  content: " *";
+  color: var(--rouge);
+}
+
+
+
+/* ─── BONUS A — Les liens externes ───────────────────────── */
+
+
+
+/* ─── BONUS B — Le trait sous les titres ─────────────────── */
+

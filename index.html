@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Fanzine d'Ada — numéro 6</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NE MODIFIE PAS CE FICHIER.
+     Tout se joue dans style.css.
+     ═══════════════════════════════════════════════════════════ -->
+
+<header class="une">
+  <p class="une-tag">Numéro 6 · Édition spéciale</p>
+  <h1 class="une-titre">Le Fanzine<br>d'Ada</h1>
+  <p class="une-accroche">Le journal des apprenantes qui quittent le navigateur</p>
+</header>
+
+<main class="page">
+
+  <!-- ─────────── ÉDITO ─────────── -->
+  <article class="edito">
+    <h2 class="titre-section">L'édito</h2>
+
+    <p class="chapo">Cette semaine, quelque chose bascule. On ferme l'onglet du navigateur et on ouvre un terminal, et le même langage qu'on écrivait hier pour faire clignoter un bouton se met soudain à lire des fichiers, à écrire des dossiers, à parler à la machine directement.</p>
+
+    <p>Pendant cinq semaines, le JavaScript vivait dans une page. Il attendait qu'on clique. Il changeait des couleurs. Il était utile, mais il était enfermé. À partir de maintenant, il sort.</p>
+
+    <p>C'est un moment étrange dans une formation. On ne rajoute pas une brique au-dessus des autres : on déplace le sol. Et pour la première fois, on écrit du code qui ne se voit pas.</p>
+
+    <blockquote class="citation" data-auteure="Une apprenante de la promo Ada Lovelace">
+      J'ai passé une heure à chercher pourquoi ma page ne s'affichait pas. Il n'y avait pas de page. C'était un script.
+    </blockquote>
+  </article>
+
+  <!-- ─────────── SOMMAIRE ─────────── -->
+  <section class="bloc">
+    <h2 class="titre-section">Au sommaire</h2>
+
+    <ul class="sommaire">
+      <li>Node.js, ou le JavaScript qui a quitté la maison</li>
+      <li>Le module <code>fs</code> et la peur de casser son ordinateur</li>
+      <li>Chemins absolus, chemins relatifs : le grand malentendu</li>
+      <li>Portrait — celles qui codent sans jamais ouvrir Chrome</li>
+      <li>Le coin du terminal : cinq commandes qu'on oublie toujours</li>
+    </ul>
+  </section>
+
+  <!-- ─────────── PROTOCOLE ─────────── -->
+  <section class="bloc">
+    <h2 class="titre-section">Protocole de survie</h2>
+
+    <p>Ce qu'il faut faire, dans l'ordre, quand un script Node refuse de démarrer.</p>
+
+    <ol class="etapes">
+      <li>Lire le message d'erreur en entier. Vraiment en entier, jusqu'à la dernière ligne.</li>
+      <li>Vérifier qu'on est dans le bon dossier avec <code>pwd</code>.</li>
+      <li>Vérifier que le fichier existe avec <code>ls</code>.</li>
+      <li>Relire le nom du fichier caractère par caractère.</li>
+      <li>Respirer, puis demander à quelqu'une de regarder par-dessus l'épaule.</li>
+    </ol>
+
+    <div class="encadre" data-label="À retenir">
+      <p>Une erreur <code>MODULE_NOT_FOUND</code> ne parle presque jamais d'un module manquant. Elle parle d'un chemin qui ne mène nulle part.</p>
+    </div>
+
+    <div class="encadre attention" data-label="Attention">
+      <p>Le module <code>fs</code> écrit vraiment sur le disque. Il n'y a pas de bouton « annuler », pas de rechargement de page qui remet tout à zéro.</p>
+    </div>
+  </section>
+
+  <!-- ─────────── RESSOURCES ─────────── -->
+  <section class="bloc">
+    <h2 class="titre-section">Pour aller plus loin</h2>
+
+    <ul class="liens">
+      <li><a class="lien-externe" href="https://nodejs.org/fr/docs" data-source="nodejs.org">La documentation officielle de Node.js</a></li>
+      <li><a class="lien-externe" href="https://developer.mozilla.org/fr/" data-source="developer.mozilla.org">MDN Web Docs, la référence</a></li>
+      <li><a class="lien-interne" href="#une">Revenir en haut du fanzine</a></li>
+    </ul>
+
+    <p class="note">Article rédigé pendant la semaine, quelque part entre un terminal et un café froid.</p>
+  </section>
+
+  <!-- ─────────── COURRIER ─────────── -->
+  <section class="bloc">
+    <h2 class="titre-section">Écris au fanzine</h2>
+
+    <p>Une question, une galère, une victoire ? La rédaction lit tout.</p>
+
+    <form class="formulaire">
+      <div class="champ">
+        <label class="requis" for="prenom">Ton prénom</label>
+        <input id="prenom" type="text" placeholder="Ada">
+      </div>
+
+      <div class="champ">
+        <label class="requis" for="email">Ton email</label>
+        <input id="email" type="email" placeholder="ada@example.com">
+      </div>
+
+      <div class="champ">
+        <label for="promo">Ta promo</label>
+        <input id="promo" type="text" placeholder="George Sand">
+      </div>
+
+      <div class="champ">
+        <label class="requis" for="message">Ton message</label>
+        <textarea id="message" rows="4" placeholder="Raconte-nous ta semaine..."></textarea>
+      </div>
+
+      <button class="bouton" type="button">Envoyer au fanzine</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <p>Le Fanzine d'Ada — numéro 6</p>
+</footer>
+
+</body>
+</html>
